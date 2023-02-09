@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#mainWrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#leftBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 1 / 1;
+    grid-row: 1 / 7;
+    background-color: #22333b;
+}
+
+h1 {
+    color: #D8E3E8;
+    font-size: 32px;
+    font-family: 'Alata', sans-serif;
+}
+
+p {
+    font-size: 24px;
+    font-family: 'Alata', sans-serif;
+    color: #D8E3E8;
+}
+
+.leftText {
+    margin: 32px;
+}
+
+#leftHeader {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 16px 32px 32px 32px;
+}
+
+.left-content {
+    display: flex;
+    gap: 20px;
+    padding: 8px;
+    align-items: center;
+}
+
+.left-icons {
+    filter: invert(82%) sepia(5%) saturate(328%) hue-rotate(153deg) brightness(105%) contrast(101%);
+}
+
+#header {
+    grid-column: 2 /7;
+    grid-row: 1 / 1;
+    background-color: #c6ac8f;
+}
+
+#main {
+    grid-column: 2 / 6;
+    grid-row: 2 / 7;
+    background-color: #dadad9;
+}
+
+#rightBar {
+    grid-column: 6 / 6;
+    grid-row: 2 / 7;
+    background-color: #dadad9;
+}
