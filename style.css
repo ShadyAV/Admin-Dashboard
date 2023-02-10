@@ -67,6 +67,13 @@ p {
     gap: 20px;
     padding: 8px;
     align-items: center;
+    border: 1px solid transparent;
+}
+
+#leftBar .left-content:hover {
+    border: 1px solid var(--almond);
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 .left-icons {
@@ -91,6 +98,10 @@ p {
     align-items: center;
     gap: 8px;
     margin: 0px 0px 0px 38px;
+}
+
+.user-name {
+    font-weight: bold;
 }
 
 .avatarCircle {
@@ -173,6 +184,11 @@ input[type="search"] {
     margin: 5px 5px 10px 10px;
 }
 
+.project-block:hover {
+    background-color: var(--khaki);
+    transform: scale(1.005);
+}
+
 .project-title {
     color: var(--gunmetal);
     font-weight: bold;
@@ -205,4 +221,13 @@ input[type="search"] {
     margin: 0px 12px 0px 12px;
     background-color: #5e503f93;
     border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    opacity: 85%;
+    cursor: pointer;
 }
