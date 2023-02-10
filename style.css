@@ -37,12 +37,13 @@ h1 {
 
 h2 {
     font-size: 21px;
-    margin: 20px 32px 0px 20px;
+    margin: 24px 32px 5px 20px;
 }
 
 h3 {
     font-size: 18px;
     color: var(--gunmetal);
+    padding-top: 4px;
 }
 
 p {
@@ -90,6 +91,11 @@ p {
     align-items: center;
     gap: 8px;
     margin: 0px 0px 0px 38px;
+}
+
+.avatarCircle {
+    background-color: #5e503f93;
+    border-radius: 50%;
 }
 
 #headerButtons {
@@ -180,7 +186,7 @@ input[type="search"] {
 
 .rightbar-block {
     background-color: #fff;
-    padding: 8px;
+    padding: 10px;
     border-radius: 6px;
     margin: 0px 10px 0px 10px;
 }
@@ -192,4 +198,11 @@ input[type="search"] {
 
 .right-header {
     margin-bottom: 10px;
+}
+
+.avatarWrapper {
+    float: left;
+    margin: 0px 12px 0px 12px;
+    background-color: #5e503f93;
+    border-radius: 50%;
 }
