@@ -47,6 +47,8 @@
                     <img src="privacy.svg" alt="Privacy Icon" height="30" class="left-icons">
                     <p>Privacy</p>
                 </div>
+            </div>
+            <div class="leftText">
                 <div class="left-content">
                     <img src="exit.svg" alt="Exit Icon" height="30" class="left-icons">
                     <p>Log out</p>
@@ -55,15 +57,67 @@
         </nav>
         <div id="header">
             <header>
-                <form role="search">
-                    <div>
-                        <input type="search" id="search" aria-label="Search through site content">
+                <div id="upperHeader">
+                    <div class="left-content" id="topLeftHeader">
+                        <img src="search.svg" alt="Search Icon" height="30">
+                        <form role="search">
+                            <div>
+                                <input type="search" id="search" aria-label="Search through site content" size="100">
+                            </div>
+                        </form>
                     </div>
-                </form>
+                    <div id="topRightHeader">
+                        <img src="notification.svg" alt="Notification Icon" height="30">
+                        <img src="avatar.svg" alt="Avatar Icon" height="40">
+                        <p class="header-text">John Smith</p>
+                    </div>
+                </div>
+                <div id="lowerHeader">
+                    <div id="welcomeTextAndAvatar">
+                        <img src="avatar.svg" alt="Avatar Icon" height="60">
+                        <div id="welcomeText">
+                            <p class="header-text">Hi there,</p>
+                            <p class="header-text">John Smith (@JSmith)</p>
+                        </div>
+                    </div>
+                    <div id="headerButtons">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
             </header>
         </div>
         <div id="main">
-            <main></main>
+            <main>
+                <h2>Your Projects</h2>
+                <div id="myProjects">
+                    <div class="project-block">
+                        <p class="project-title">Etch-A-Sketch</p>
+                        <img src="EtchASketch.jpg" alt="Etch-A-Sketch Image" height="250px">
+                    </div>
+                    <div class="project-block">
+                        <p class="project-title">Calculator</p>
+                        <img src="Calculator.jpg" alt="Calculator Image" height="250px">
+                    </div>
+                    <div class="project-block">
+                        <p class="project-title">Rock Paper Scissors</p>
+                        <img src="RockPaperScissors.jpg" alt="Rock Paper Scissors Image" height="250px">
+                    </div>
+                    <div class="project-block">
+                        <p class="project-title">Sign-Up Form</p>
+                        <img src="SignUpForm.jpg" alt="Sign-Up Form Image" height="250px">
+                    </div>
+                    <div class="project-block">
+                        <p class="project-title">Landing Page</p>
+                        <img src="LandingPage.jpg" alt="Landing Page Image" height="250px">
+                    </div>
+                    <div class="project-block">
+                        <p class="project-title">Odin Recipes</p>
+                        <img src="Solyanka.jpg" alt="Odin Recipes Image" height="250px">
+                    </div>
+                </div>
+            </main>
         </div>
         <div id="rightBar">
             <aside></aside>
