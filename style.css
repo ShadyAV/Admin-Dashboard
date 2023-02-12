@@ -19,6 +19,7 @@
 #mainWrapper {
     display: grid;
     min-height: 100vh;
+    min-height: 100dvh;
     grid-template: auto 4fr/1fr 5fr;
 }
 
@@ -36,7 +37,7 @@ h1 {
 
 h2 {
     font-size: 1.3rem;
-    margin: 1rem 0px 0px 1rem;
+    padding: 0rem 1rem;
 }
 
 h3 {
@@ -167,12 +168,13 @@ input[type="search"] {
     grid-template-columns: 3fr 1fr;
     background-color: var(--putty);
     box-shadow: 0px 0px 5px var(--gunmetal) inset;
+    padding: 1rem 1rem;
 }
 
 #myProjects {
     display: grid;
     grid-template-rows: auto 1fr 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-auto-rows: 1fr;
 }
 
@@ -232,7 +234,7 @@ button:hover {
 }
 
 #myProjects>h2 {
-    grid-column: 1 / 3;
+    grid-column: 1 / -1;
 }
 
 #announcements-and-trending {
