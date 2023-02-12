@@ -11,38 +11,30 @@
 
 <body id="mainWrapper">
     <header id="header">
-        <div id="upperHeader">
-            <div class="left-content" id="topLeftHeader">
-                <img src="search.svg" alt="Search Icon" height="30">
-                <form role="search">
-                    <div>
-                        <input type="search" id="search" aria-label="Search through site content" size="100">
-                    </div>
-                </form>
+        <div class="left-content" id="topLeftHeader">
+            <img src="search.svg" alt="Search Icon" height="30">
+            <input type="search" id="search" aria-label="Search through site content">
+        </div>
+        <div id="topRightHeader">
+            <img src="notification.svg" alt="Notification Icon" height="30" id="notificationImg">
+            <div class="avatarCircle">
+                <img src="avatar.svg" alt="Avatar Icon" height="40">
             </div>
-            <div id="topRightHeader">
-                <img src="notification.svg" alt="Notification Icon" height="30" id="notificationImg">
-                <div class="avatarCircle">
-                    <img src="avatar.svg" alt="Avatar Icon" height="40">
-                </div>
-                <p class="header-text user-name">John Smith</p>
+            <p class="header-text user-name">John Smith</p>
+        </div>
+        <div id="welcomeTextAndAvatar">
+            <div class="avatarCircle">
+                <img src="avatar.svg" alt="Avatar Icon" height="60">
+            </div>
+            <div id="welcomeText">
+                <p class="header-text">Hi there,</p>
+                <p class="header-text user-name">John Smith (@JSmith)</p>
             </div>
         </div>
-        <div id="lowerHeader">
-            <div id="welcomeTextAndAvatar">
-                <div class="avatarCircle">
-                    <img src="avatar.svg" alt="Avatar Icon" height="60">
-                </div>
-                <div id="welcomeText">
-                    <p class="header-text">Hi there,</p>
-                    <p class="header-text user-name">John Smith (@JSmith)</p>
-                </div>
-            </div>
-            <div id="headerButtons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
+        <div id="headerButtons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
         </div>
     </header>
     <nav id="leftBar">
@@ -95,30 +87,42 @@
             <a href="https://shadyav.github.io/Etch-A-Sketch/">
                 <div class="project-block" id="etchASketch">
                     <h3 class="project-title">Etch-A-Sketch</h3>
-                    <img src="EtchASketch.jpg" alt="Etch-A-Sketch Image" height="60">
+                    <img src="EtchASketch.jpg" alt="Etch-A-Sketch Image">
                 </div>
             </a>
             <a href="https://shadyav.github.io/Calculator/">
                 <div class="project-block" id="calculatorBlock">
                     <h3 class="project-title">Calculator</h3>
-                    <img src="Calculator.jpg" alt="Calculator Image" height="60">
+                    <img src="Calculator.jpg" alt="Calculator Image">
                 </div>
             </a>
             <a href="https://shadyav.github.io/landing_page/">
                 <div class="project-block" id="landingPage">
                     <h3 class="project-title">Landing Page</h3>
-                    <img src="LandingPage.jpg" alt="Landing Page Image" height="60">
+                    <img src="LandingPage.jpg" alt="Landing Page Image">
                 </div>
             </a>
             <a href="https://shadyav.github.io/Sign-Up-Form/">
                 <div class="project-block" id="signUpForm">
                     <h3 class="project-title">Sign-Up Form</h3>
-                    <img src="SignUpForm.jpg" alt="Sign-Up Form Image" height="60">
+                    <img src="SignUpForm.jpg" alt="Sign-Up Form Image">
+                </div>
+            </a>
+            <a href="https://shadyav.github.io/Rock-Paper-Scissors/">
+                <div class="project-block" id="rockPaperScissors">
+                    <h3 class="project-title">Rock-Paper-Scissors</h3>
+                    <img src="RockPaperScissors.jpg" alt="Rock-Paper-Scissors Image">
+                </div>
+            </a>
+            <a href="https://shadyav.github.io/odin-recipes/">
+                <div class="project-block" id="solyankaImg">
+                    <h3 class="project-title">Odin Recipes</h3>
+                    <img src="Solyanka.jpg" alt="Solyanka Image">
                 </div>
             </a>
         </div>
         <div id="announcements-and-trending">
-            <div>
+            <div id="announcementsBlock">
                 <h2 class="right-header">Announcements</h2>
                 <div class="rightbar-block">
                     <h3>Site Maintenance</h3>
@@ -134,36 +138,48 @@
                         integers.</p>
                 </div>
             </div>
-            <div>
+            <div id="trendingBlock">
                 <h2 class="right-header">Trending</h2>
                 <div class="rightbar-block">
                     <div class="projects-block-right">
                         <div class="avatarWrapper">
                             <img src="avatar1.svg" alt="" height="40">
                         </div>
-                        <p>@shady</p>
-                        <p>Speed Chat App</p>
+                        <p>
+                            <span>@shady</span>
+                            <br>
+                            <span>Speed Chat App</span>
+                        </p>
                     </div>
                     <div class="projects-block-right">
                         <div class="avatarWrapper">
                             <img src="avatar2.svg" alt="" height="40">
                         </div>
-                        <p>@morgan</p>
-                        <p>Super Cool Project</p>
+                        <p>
+                            <span>@morgan</span>
+                            <br>
+                            <span>Super Cool Project</span>
+                        </p>
                     </div>
                     <div class="projects-block-right">
                         <div class="avatarWrapper">
                             <img src="avatar.svg" alt="" height="40">
                         </div>
-                        <p>@JSmith</p>
-                        <p>Etch-A-Sketch</p>
+                        <p>
+                            <span>@JSmith</span>
+                            <br>
+                            <span>Etch-A-Sketch</span>
+                        </p>
                     </div>
                     <div class="projects-block-right">
                         <div class="avatarWrapper">
                             <img src="avatar3.svg" alt="" height="40">
                         </div>
-                        <p>@poroDise</p>
-                        <p>Learn german in one day</p>
+                        <p>
+                            <span>@poroDise</span>
+                            <br>
+                            <span>Learn german in one day</span>
+                        </p>
                     </div>
                 </div>
             </div>
